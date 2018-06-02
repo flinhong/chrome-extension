@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Simple Youtube Downloader",
+  "version": "0.1.7",
+  "description": "Simply download youtube videos by click...",
+  "author": "Frank Lin",
+
+  "web_accessible_resources": ["src/script.js"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["src/loader.js"],
+      "css": ["src/style.css"]
+    }
+  ],
+  "permissions": ["downloads"],
+  "background": {
+    "scripts": ["src/background.js"]
+  }
+}

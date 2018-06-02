@@ -1,0 +1,40 @@
+#downloadVideo button{
+  color: rgba(17, 17, 17, 0.4);
+}
+
+#downloadVideo {
+  margin-right: 2.5rem;
+}
+
+#downloadVideoDropdown {
+  position: absolute;
+  border: 1px solid #ddd;
+  min-width: 150px;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0 ,0 , 0.2);
+  /* margin-left: 200px; */
+  /* margin-top: 40px; */
+  right: 0;
+  top: 40px;
+  display: none;
+}
+
+#downloadVideoDropdown.shown {
+  display: block;
+}
+
+#downloadVideoDropdown ul {
+  padding: 0;
+}
+
+#downloadVideoDropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+#downloadVideoDropdown a:hover {
+  background-color: #eee;
+}
